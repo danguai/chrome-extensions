@@ -3,6 +3,23 @@
     "name": "Tab Manager",
     "description": "Tab manager to hightlight tabs that haven't been read yet, and categorized them by topic",
     "version": "1.0",
+    "icons": {
+        "16": "images/icon_TM_16.png",
+        "32": "images/icon_TM_32.png",
+        "48": "images/icon_TM_48.png",
+        "128": "images/icon_TM_128.png"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/content.js"
+            ],
+            "matches": [
+                "https://developer.chrome.com/docs/extensions/*",
+                "https://developer.chrome.com/docs/webstore/*"
+            ]
+        }
+    ],
     "action": {
         "default_popup": "hello.html",
         "default_icon": "hello_extensions.png"
