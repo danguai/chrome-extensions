@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Tab Manager",
+    "description": "Tab manager to hightlight tabs that haven't been read yet, and categorized them by topic",
+    "version": "1.0",
+    "action": {
+        "default_popup": "hello.html",
+        "default_icon": "hello_extensions.png"
+    }
+}
