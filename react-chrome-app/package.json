@@ -1,5 +1,5 @@
 {
-  "name": "extension",
+  "name": "react-chrome-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,7 +8,6 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
   },
-  "move": "yarn build && rm -rf ../static && mv build/static ../static",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

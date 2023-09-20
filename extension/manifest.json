@@ -1,46 +1,22 @@
 {
-    "manifest_version": 3,
     "name": "Tab Manager",
+    "version": "1.0.0",
+    "manifest_version": 3,
     "description": "Tab manager to hightlight tabs that haven't been read yet, and categorized them by topic",
-    "version": "1.0",
-    "manifest_version": 2,
-    "permissions": [
-        "tabs",
-        "storage",
-        "activeTab",
-        "declarativeContent",
-        "http://*/*",
-        "https://*/*"
-    ],
-    "browser_action": {
-        "default_popup": "extension/scripts/popup.html",
-        "default_icon": {
-            "16": "images/icon_TM_16.png",
-            "32": "images/icon_TM_32.png",
-            "48": "images/icon_TM_48.png",
-            "128": "images/icon_TM_128.png"
-        },
-        "default_title": "Tab Manager"
-    },
     "icons": {
         "16": "images/icon_TM_16.png",
         "32": "images/icon_TM_32.png",
         "48": "images/icon_TM_48.png",
         "128": "images/icon_TM_128.png"
     },
-    "content_security_policy": "script-src 'self' 'sha256-fdAfMKZtCTRPKMRznGwonJHC++vCCrQS7XFnVrzSXAE=' 'sha256-YD8w9VLrdvqI5/tFVmpT+1337ly+e/JvPrkRxYZo/w4='; object-src 'self';",
     "content_scripts": [
         {
+            "matches": [
+                "<all_urls>"
+            ],
             "js": [
                 "scripts/content.js"
-            ],
-            "matches": [
-                "https://developer.chrome.com/docs/extensions/*",
-                "https://developer.chrome.com/docs/webstore/*"
             ]
         }
-    ],
-    "action": {
-        "default_popup": "scripts/popup.html"
-    }
+    ]
 }
