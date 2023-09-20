@@ -1,13 +1,10 @@
-import './App.css';
-import { changeColor } from './main'
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <button onClick={changeColor}>
-          Temp Change Color
-        </button>
+    <div>
+      <header>
+        <h5>
+          Hello from React App
+        </h5>
       </header>
     </div>
   );
