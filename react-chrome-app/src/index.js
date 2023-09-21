@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import App from './App';
 
 const rootElement = document.createElement('div');
@@ -21,35 +21,6 @@ globalStyles.innerHTML = `
 
 rootElement.appendChild(globalStyles);
 document.body.appendChild(rootElement);
-
-// const Button = styled.a < { $primary?: boolean } > `
-//   --accent-color: white;
-
-//   background: transparent;
-//   border-radius: 3px;
-//   border: 1px solid var(--accent-color);
-//   color: var(--accent-color);
-//   display: inline-block;
-//   margin: 0.5rem 1rem;
-//   padding: 0.5rem 0;
-//   transition: all 200ms ease-in-out;
-//   width: 11rem;
-
-//   &:hover {
-//     filter: brightness(0.85);
-//   }
-
-//   &:active {
-//     filter: brightness(1);
-//   }
-
-//   ${props => props.$primary && css`
-//     background: var(--accent-color);
-//     color: black;
-//   `}
-// `
-// rootElement.appendChild(Button);
-// document.body.appendChild(rootElement);
 
 const root = ReactDOM.createRoot(rootElement);
 root.render(
